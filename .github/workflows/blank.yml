@@ -32,6 +32,8 @@ jobs:
           git config --global user.name "Akash Chakraborty"
           chmod +x download.py
           python3 download.py
+          git lfs track "*.zip"
+          git add .gitattributes
           git add .
           git commit -m "upload"
           git push
