@@ -26,14 +26,14 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Upload downloaded file
         run: |
           git config --global user.email "aakashpeace@gmail.com"
           git config --global user.name "Akash Chakraborty"
           chmod +x download.py
           python3 download.py
           git add .
-          git commit
+          git commit -m "upload
           git push
 
 #       - name: Upload a Build Artifact
