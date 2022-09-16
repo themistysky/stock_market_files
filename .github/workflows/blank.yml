@@ -33,7 +33,7 @@ jobs:
           chmod +x download.py
           python3 download.py
           git add .
-          git commit -m "upload
+          git commit -m "upload"
           git push
 
 #       - name: Upload a Build Artifact
