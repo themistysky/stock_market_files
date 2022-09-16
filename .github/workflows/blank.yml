@@ -30,9 +30,16 @@ jobs:
         run: |
           chmod +x download.py
           python3 download.py
+          git add .
+          git commit
+          git push
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+#       - name: Upload a Build Artifact
+#         uses: actions/upload-artifact@v3.1.0
+#         with:
+#           name: upload_file
+#           path: train_indicators.csv.zip
+#           retention-days: 2
+          
+          
+          
